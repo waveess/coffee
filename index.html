@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOX ICONS -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+   <!-- Css -->
+   <link rel = "stylesheet" href = "./assets/css/style.css">
+   <link rel = "stylesheet" href = "./assets/scss/style.scss">
+    
+    <title>Responsive Landing Page</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="l-header">
+        <nav class = "nav bd-grid">
+            <div>
+                <a href ="#" class = "nav__logo">Coffee</a>
+            </div>
+
+            <div class = "nav__toggle" id = "nav-toggle">
+                <i class = "bx bx-menu"></i>
+            </div>
+
+            <div class = "nav__menu" id = "nav-menu">
+                <div class = "nav__close" id = "nav-close">
+                    <i class = "bx bx-x"></i>
+                </div>
+
+                <ul class = "nav__list">
+                    <i class = "nav__item">
+                        <a href = "#home" class = "nav__link active">Home</a>
+                    </i>
+                    <i class = "nav__item">
+                        <a href = "#about" class = "nav__link active">About</a>
+                    </i>
+                    <i class = "nav__item">
+                        <a href = "#menu" class = "nav__link active">Menu</a>
+                    </i>
+                    <i class = "nav__item">
+                        <a href = "#contact" class = "nav__link active">Contact</a>
+                    </i>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class = "l-main">
+        <!--Home-->
+        <section class = "home" id = "home">
+            <div class = "home__container bd-grid">
+                <div class = "home__img">
+                    <img src="assets/img/img1.png" alt="" data-speed="-2" class="move">
+                    <img src="assets/img/img2.png" alt="" data-speed="2" class="move">
+                    <img src="assets/img/img3.png" alt="" data-speed="2" class="move">
+                    <img src="assets/img/img4.png" alt="" data-speed="-2" class="move">
+                    <img src="assets/img/img5.png" alt="" data-speed="-2" class="move">
+                    <img src="assets/img/img6.png" alt="" data-speed="2" class="move">
+                </div>
+
+                <div class = "home__data">
+                    <h1 class = "home__title">Coffee <br> Drink 3D</h1>
+                    <p class="home__description">Let's help discover the best coffee drink <br> of the week.</p>
+                        <a href="#" class="home__button">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <section class = "menu" id = "menu">
+<div class = "menu__items">
+    <!-- Lattes -->
+   <div class = "lattes" id = "lattes">
+       <img src = "/">
+       <button class = latte>
+           <a href = "lattes.html" target = "blank"></a>
+           Lattes
+        </button>
+   </div>
+   <!-- Mochas -->
+   <div class = "mochas" id = "mochas">
+    <img src = "/">
+    <button class = latte>
+        <a href = "./mochas.html"></a>
+        Mochas
+     </button>
+</div>
+<!-- Iced-coffee -->
+<div class = "blended" id = "blended">
+    <img src = "/">
+    <button class = latte>
+        <a href = "./iced.html"></a>
+        Blended
+     </button>
+</div>
+</div>
+        </section>
+    </main>
+
+    <!--===== GSAP =====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
